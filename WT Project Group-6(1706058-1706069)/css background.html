@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>css background</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+  		<a href="HTMLeditor.html">HTML Editors</a>
+  		<a href="basictags.html">Basic HTML Tags</a>
+  		<a href="HTMLelements.html">HTML Elements</a>
+  		<a href="HTMLattributes.html">HTML Attributes</a>
+  		<a href="HTMLparagraphs">HTML Paragraphs</a>
+  		<a href="html style.html">HTML Styles</a>
+  		<a href="html text formetting.html">HTML Formatting</a>
+  		<a href="html quotations.html">HTML Quotataions</a>
+  		<a href="html comments.html">HTML Comments</a>
+  		<a href="html comments.html">HTML Colors</a>
+  		<a href="html style with css.html">HTML CSS</a>
+  		<a href="wt13c.html">HTML Links</a>
+  		<a href="wt14c.html">HTML Images</a>
+  		<a href="wt15c.html">HTML Tables</a>
+  		<a href="wt16c.html">HTML Lists</a>
+  		<a href="wt17c.html">HTML Blocks</a>
+  		<a href="wt18c.html">HTML Classes</a>
+  		<a href="html_id19.html">HTML Id</a>
+  		<a href="html_frames.html">HTML Frames</a>
+  		<a href="hyml_forms.html">HTML Forms</a>
+  		<a href="html_form_elements.html">HTML Form Elements</a>
+  		<a href="Html_input-types.html">HTML Input Types</a>
+  		<a href="css syntax and selection.html">CSS Syntax</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="css colors.html">CSS Colors</a>
+  		<a href="css background.html">CSS Backgrounds</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="30.html">CSS Borders</a>
+  		<a href="31.html">CSS Margins</a>
+  		<a href="32.html">CSS Padding</a>
+  		<a href="33.html">CSS Height/width</a>
+  		<a href="34.html">CSS Box Model</a>
+  		<a href="35.html">CSS Outline</a>
+  		<a href="36_css_text.html">CSS Text</a>
+  		<a href="37_css_fonts.html">CSS Fonts</a>
+  		<a href="38_css_lists.html">CSS Lists</a>
+  		<a href="39_css_tables.html">CSS Tables</a>
+  		<a href="40_css_fonts.html">CSS Icons</a>
+  		<a href="p1.html">CSS Layout</a>
+  		<a href="p2.html">CSS display block</a>
+  		<a href="p3.html">CSS Align </a>
+  		<a href="p4.html">CSS Opacity</a>
+  		<a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 100px;">
+		<div class="w3-col l10 m12" id="main">
+      <div id="mainLeaderboard" style="overflow:hidden;">
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="snhb-main_leaderboard-0" data-google-query-id="CIK_4Yi1ht0CFQkSaAodCG8H8A"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+       
+      </div>
+<h1>CSS <span class="color_h1">Backgrounds</span></h1>
+
+<br>
+
+<div style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('mountain.jpg')">
+<p style="margin-right:150px;">The CSS background properties are used to define the background effects 
+for elements.</p>
+<p>CSS background properties:</p>
+<ul>
+  <li>background-color</li>
+  <li>background-image</li>
+  <li>background-repeat</li>
+  <li>background-attachment</li>
+  <li>background-position</li>
+</ul>
+</div>
+<hr>
+
+<h2>Background Color</h2>
+<p>The <code class="w3-codespan">background-color</code> property specifies the background color of an element.</p>
+<p>The background color of a page is set like this:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<p>With CSS, a color is most often specified by:</p>
+<ul>
+<li>a valid color name - like "red"</li>
+<li>a HEX value - like "#ff0000"</li>
+<li>an RGB value - like "rgb(255,0,0)"</li>
+</ul>
+<p>Look at <a href="/cssref/css_colors_legal.asp">CSS Color Values</a> for a complete 
+list of possible color values.</p>
+<p>In the example below, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements have different background colors:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> green<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>
+div <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> 
+yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+
+</div>
+<hr>
+<div style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0" data-google-query-id="CIS_4Yi1ht0CFQkSaAodCG8H8A"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+    
+</div>
+<hr>
+
+<h2>Background Image</h2>
+<p>The <code class="w3-codespan">background-image</code> property specifies an image to use as the background of an element.</p>
+<p>By default, the image is repeated so it covers the entire element.</p>
+<p>The background image for a page can be set like this:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-image<span style="color:mediumblue"><span style="color:black">:</span> url("paper.gif")<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+
+</div>
+
+<p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is 
+hardly readable:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-image<span style="color:mediumblue"><span style="color:black">:</span> url("bgdesert.jpg")<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p><b>Note:</b> When using a background image, use an image that does not disturb the text.</p>
+</div>
+
+<hr>
+
+<h2>Background Image - Repeat Horizontally or Vertically</h2>
+<p>By default, the <code class="w3-codespan">background-image</code> property repeats an image both horizontally and vertically.</p>
+<p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("gradient_bg.png")<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<p>If the image above is repeated only horizontally (<code class="w3-codespan">background-repeat: repeat-x;</code>), the background will look 
+better:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("gradient_bg.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-repeat<span style="color:mediumblue"><span style="color:black">:</span> repeat-x<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p><b>Tip:</b> To repeat an image vertically, set <code class="w3-codespan">background-repeat: repeat-y;</code></p>
+</div>
+
+<hr>
+
+<h2>Background Image - Set position and no-repeat</h2>
+<p>Showing the background image only once is also specified by the <code class="w3-codespan">background-repeat</code> property:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("img_tree.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-repeat<span style="color:mediumblue"><span style="color:black">:</span> no-repeat<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<p>In the example above, the background image is shown in the same place as the text. We want to change the position of the image, so that it does not 
+disturb the text too much.</p>
+<p>The position of the image is specified by the <code class="w3-codespan">background-position</code> property:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("img_tree.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-repeat<span style="color:mediumblue"><span style="color:black">:</span> no-repeat<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-position<span style="color:mediumblue"><span style="color:black">:</span> right top<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<hr>
+
+<h2>Background Image - Fixed position</h2>
+<p>To specify that the background image should be fixed (will not scroll with the rest of the page), 
+use the <code class="w3-codespan">background-attachment</code> property:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+background-image<span style="color:mediumblue"><span style="color:black">:</span> url("img_tree.png")<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-repeat<span style="color:mediumblue"><span style="color:black">:</span> no-repeat<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+background-position<span style="color:mediumblue"><span style="color:black">:</span> right top<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp; background-attachment<span style="color:mediumblue"><span style="color:black">:</span> fixed<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+<hr>
+
+<h2>Background - Shorthand property</h2>
+<p>To shorten the code, it is also possible to specify all the background properties in one 
+single property. This is called a shorthand property.</p>
+<p>The shorthand property for background is <code class="w3-codespan">background</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background<span style="color:mediumblue"><span style="color:black">:</span> #ffffff url("img_tree.png") no-repeat right top<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+
+</div>
+<p>
+When using the shorthand property the order of the property values is:</p>
+<ul>
+<li><code class="w3-codespan">background-color</code></li>
+<li><code class="w3-codespan">background-image</code></li>
+<li><code class="w3-codespan">background-repeat</code></li>
+<li><code class="w3-codespan">background-attachment</code></li>
+<li><code class="w3-codespan">background-position</code></li>
+</ul>
+<p>It does not matter if one of the property values is missing, as long as the 
+other ones are in this order.</p>
+<hr>
+
+
+<hr>
+
+<h2>All CSS Background Properties</h2>
+
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:30%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>background</td>
+    <td>Sets all the background properties in one declaration</td>
+  </tr>
+  <tr>
+    <td>background-attachment</td>
+    <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+  </tr>
+  <tr>
+    <td>background-clip</td>
+    <td>Specifies the painting area of the background</td>
+  </tr>
+  <tr>
+    <td>background-color</td>
+    <td>Sets the background color of an element</td>
+  </tr>
+  <tr>
+    <td>background-image</td>
+    <td>Sets the background image for an element</td>
+  </tr>
+  <tr>
+    <td>background-origin</td>
+    <td>Specifies where the background image(s) is/are positioned</td>
+  </tr>
+  <tr>
+    <td>background-position</td>
+    <td>Sets the starting position of a background image</td>
+  </tr>
+  <tr>
+    <td>background-repeat</td>
+    <td>Sets how a background image will be repeated</td>
+  </tr>
+  <tr>
+    <td>background-size</td>
+    <td>Specifies the size of the background image(s)</td>
+  </tr>
+</tbody></table>
+
+<br>
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

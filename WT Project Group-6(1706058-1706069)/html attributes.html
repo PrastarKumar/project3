@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>html attributes</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+  		<a href="HTMLeditor.html">HTML Editors</a>
+  		<a href="basictags.html">Basic HTML Tags</a>
+  		<a href="HTMLelements.html">HTML Elements</a>
+  		<a href="HTMLattributes.html">HTML Attributes</a>
+  		<a href="HTMLparagraphs">HTML Paragraphs</a>
+  		<a href="html style.html">HTML Styles</a>
+  		<a href="html text formetting.html">HTML Formatting</a>
+  		<a href="html quotations.html">HTML Quotataions</a>
+  		<a href="html comments.html">HTML Comments</a>
+  		<a href="html comments.html">HTML Colors</a>
+  		<a href="html style with css.html">HTML CSS</a>
+  		<a href="wt13c.html">HTML Links</a>
+  		<a href="wt14c.html">HTML Images</a>
+  		<a href="wt15c.html">HTML Tables</a>
+  		<a href="wt16c.html">HTML Lists</a>
+  		<a href="wt17c.html">HTML Blocks</a>
+  		<a href="wt18c.html">HTML Classes</a>
+  		<a href="html_id19.html">HTML Id</a>
+  		<a href="html_frames.html">HTML Frames</a>
+  		<a href="hyml_forms.html">HTML Forms</a>
+  		<a href="html_form_elements.html">HTML Form Elements</a>
+  		<a href="Html_input-types.html">HTML Input Types</a>
+  		<a href="css syntax and selection.html">CSS Syntax</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="css colors.html">CSS Colors</a>
+  		<a href="css background.html">CSS Backgrounds</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="30.html">CSS Borders</a>
+  		<a href="31.html">CSS Margins</a>
+  		<a href="32.html">CSS Padding</a>
+  		<a href="33.html">CSS Height/width</a>
+  		<a href="34.html">CSS Box Model</a>
+  		<a href="35.html">CSS Outline</a>
+  		<a href="36_css_text.html">CSS Text</a>
+  		<a href="37_css_fonts.html">CSS Fonts</a>
+  		<a href="38_css_lists.html">CSS Lists</a>
+  		<a href="39_css_tables.html">CSS Tables</a>
+  		<a href="40_css_fonts.html">CSS Icons</a>
+  		<a href="p1.html">CSS Layout</a>
+  		<a href="p2.html">CSS display block</a>
+  		<a href="p3.html">CSS Align </a>
+  		<a href="p4.html">CSS Opacity</a>
+  		<a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 100px;">
+		<div class="w3-col l10 m12" id="main">
+      <div id="mainLeaderboard" style="overflow:hidden;">
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="snhb-main_leaderboard-0" data-google-query-id="CLK1w-K2ht0CFUtJKwodKuUO3g"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+       
+      </div>
+<h1>HTML <span class="color_h1">Attributes</span></h1>
+
+<hr>
+<p class="intro">Attributes provide additional information about HTML elements.</p>
+<hr>
+
+<h2>HTML Attributes</h2>
+<ul>
+  <li>All HTML elements can have <b>attributes</b></li>
+  <li>Attributes provide <b>additional information</b> about an element</li>
+  <li>Attributes are always specified in <b>the start tag</b></li>
+  <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+</ul>
+<hr>
+<h2>The href Attribute</h2>
+<p>HTML links are defined with the <code class="w3-codespan">&lt;a&gt;</code> tag. The link address is specified in the <code class="w3-codespan">href</code> attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>This is a link<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<p>You will learn more about links and the <code class="w3-codespan">&lt;a&gt;</code> tag later in this tutorial.</p>
+<hr>
+<h2>The src Attribute</h2>
+<p>HTML images are defined with the <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
+<p>The filename of the image source is specified in the <code class="w3-codespan">src</code> attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<hr>
+<h2>The width and height Attributes</h2>
+<p>Images in HTML have a set of <strong>size</strong> attributes, which specifies the width and 
+height of the image:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> width<span style="color:mediumblue">="500"</span> height<span style="color:mediumblue">="600"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+
+<hr>
+
+<h2>The alt Attribute</h2>
+<p>The <code class="w3-codespan">alt</code> attribute specifies an alternative text to be used, when an 
+image cannot be displayed.</p>
+<p>The value of the attribute can be read by screen readers. This way, someone "listening" 
+to the webpage, e.g. a blind person, can "hear" the element.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl 
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p>The <code class="w3-codespan">alt</code> attribute is also useful if the image does not exist:</p>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<p>See what happens if we try to display an image that does not exist:</p>
+<div class="w3-code notranslate htmlHigh">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_typo.jpg"</span> alt<span style="color:mediumblue">="Girl 
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_attributes_alt_error" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+<div style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0" data-google-query-id="CPrcxOK2ht0CFUVLKwod9PwD1Q"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0__container__" style="border: 0pt none; display: inline-block; width: 468px; height: 60px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-29/html/container.html" id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="468" height="60" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+    
+</div>
+<hr>
+
+<h2>The style Attribute</h2>
+<p>The <code class="w3-codespan">style</code> attribute is used to specify the styling of an element, like color, 
+font, size etc.</p>
+<div class="w3-example">
+<h3>Example</h3>
+  <div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:red"</span></span><span style="color:mediumblue">&gt;</span></span>I am a paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+   </div>
+
+</div>
+<div class="w3-note w3-panel">
+
+</div>
+<hr>
+
+<h2>The lang Attribute</h2>
+<p>The language of the document can be declared in the <code class="w3-codespan">&lt;html&gt;</code> tag.</p>
+<p>The language is declared with the <code class="w3-codespan">lang</code> attribute.</p>
+<p>Declaring a language is important for accessibility applications (screen readers) and search engines:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en-US"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+ ...<br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<p>The first two letters specify the language (en). If there is a dialect, use two more letters (US).</p>
+<hr>
+
+<h2>The title Attribute</h2>
+<p>Here, a <code class="w3-codespan">title</code> attribute is added to the <code class="w3-codespan">&lt;p&gt;</code> 
+element.
+The value of the title attribute will be displayed as a tooltip when 
+you mouse over the paragraph:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="I'm a tooltip"</span></span><span style="color:mediumblue">&gt;</span></span><br>This is a paragraph.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<hr>
+
+<h2>We Suggest: Use Lowercase Attributes</h2>
+<p>The HTML5 standard does not require lowercase attribute names.</p>
+<p>The title attribute can be written with uppercase or lowercase 
+like <strong>title</strong> or <strong>TITLE</strong>.</p>
+<p>W3C <strong>recommends</strong> lowercase in HTML, and <strong>demands</strong> 
+lowercase for stricter document types like XHTML.</p>
+<div class="w3-panel w3-note">
+  <p>At W3Schools we always use lowercase attribute names.</p>
+</div>
+<hr>
+
+<h2>We Suggest: Quote Attribute Values</h2>
+<p>The HTML5 standard does not require quotes around attribute values.</p>
+<p>The <code class="w3-codespan">href</code> attribute, demonstrated above, <em>can</em> be written without quotes:</p>
+
+<div class="w3-row-padding" style="margin:-8px -16px">
+
+<div class="w3-half">
+<div class="w3-example">
+<h3>Bad</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;white-space: nowrap;overflow: auto">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red">
+href<span style="color:mediumblue">=https://www.w3schools.com</span></span><span style="color:mediumblue">&gt;</span></span> </div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_attributes_noquotes" target="_blank">Try it Yourself »</a>
+</div>
+
+</div>
+<div class="w3-half">
+<div class="w3-example">
+<h3>Good</h3>
+<div class="w3-code notranslate htmlHigh" style="white-space: nowrap;overflow: auto;">
+  <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span> </div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_attributes_withquotes" target="_blank">Try it Yourself »</a>
+</div>
+
+</div>
+
+</div>
+<p>W3C <b>recommends</b> quotes in HTML, and <strong>demands</strong> quotes for stricter document types like XHTML.</p>
+<p>Sometimes it is <strong>necessary</strong> to use quotes. This example will not display 
+the title attribute correctly, because it contains a space:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red">
+ title<span style="color:mediumblue">=About </span>W3Schools</span><span style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p>Using quotes are the most common. Omitting quotes can produce errors.
+<br>At W3Schools we <strong>always</strong> use quotes around attribute values.</p>
+</div>
+<hr>
+
+<h2>Single or Double Quotes?</h2>
+<p>Double quotes around attribute values are the most common in HTML, but single 
+quotes can also be used.</p>
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">='John "ShotGun" Nelson'</span></span><span style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+
+<p>Or vice versa:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="John 'ShotGun' Nelson"</span></span><span style="color:mediumblue">&gt;</span></span> </div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_attributes_single_double" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>All HTML elements can have <strong>attributes</strong></li>
+  <li>The <code class="w3-codespan">title</code> attribute provides additional "tool-tip"  information</li>
+  <li>The <code class="w3-codespan">href</code> attribute provides address information for links</li>
+  <li>The <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> attributes provide size information for images</li>
+  <li>The <code class="w3-codespan">alt</code> attribute provides text for screen readers</li>
+  <li>At W3Schools we always use <strong>lowercase</strong> attribute names</li>
+  <li>At W3Schools we always <strong>quote</strong> attribute values with double quotes</li>
+</ul>
+<
+
+<h2>HTML Attributes</h2>
+<p>Below is an alphabetical list of some attributes often used in HTML:</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>alt</td>
+<td>Specifies an alternative text for an image, when the image cannot be 
+displayed</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input element should be disabled</td>
+</tr>
+<tr>
+<td>href</td>
+<td>Specifies the URL (web address) for a link</td>
+</tr>
+<tr>
+<td>id</td>
+<td>Specifies a unique id for an element</td>
+</tr>
+<tr>
+<td>src</td>
+<td>Specifies the URL (web address) for an image</td>
+</tr>
+<tr>
+<td>style</td>
+<td>Specifies an inline CSS style for an element</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Specifies extra information about an element (displayed as a tool tip)</td>
+</tr>
+</tbody></table>
+<div class="w3-note w3-panel">
+
+</div>
+
+<br>
+
+</div>
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

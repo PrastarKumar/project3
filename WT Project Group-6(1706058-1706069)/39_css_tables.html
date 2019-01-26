@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>CSS Tables</title>
+	<style>
+	body{
+     background-color:#FFFAFA;
+     font:"helvetica";
+     }
+hr{
+    border="0";
+    color="#DCDCDC";
+    }
+.box{
+         width:300pxborder:0;
+         padding:15px;
+         margin: 25px;
+         background-color:#D9D9D9;
+         }
+.bborder{
+           padding:25px;
+           border-left:6px solid Orange;
+           background-color:WhiteSmoke;
+           }
+.tagbox{
+           width:2px;
+           border:0;
+           padding:2px;
+           color: #B22222;
+           background-color:#E6E6E6
+           }
+.thead{
+    background-color: orange;
+    color: white;
+   }
+.stripetr:nth-child(){background-color: #f2f2f2;}
+#liol{
+          background: #ffe5e5;
+		  padding: 5px;
+          margin-left: 35px;
+          }
+#liul{
+        background: #cce5ff;
+         margin: 5px;
+         }
+.ttr:hover {background-color: #f5f5f5;}
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+      <a href="HTMLeditor.html">HTML Editors</a>
+      <a href="basictags.html">Basic HTML Tags</a>
+      <a href="HTMLelements.html">HTML Elements</a>
+      <a href="HTMLattributes.html">HTML Attributes</a>
+      <a href="HTMLparagraphs">HTML Paragraphs</a>
+      <a href="html style.html">HTML Styles</a>
+      <a href="html text formetting.html">HTML Formatting</a>
+      <a href="html quotations.html">HTML Quotataions</a>
+      <a href="html comments.html">HTML Comments</a>
+      <a href="html comments.html">HTML Colors</a>
+      <a href="html style with css.html">HTML CSS</a>
+      <a href="wt13c.html">HTML Links</a>
+      <a href="wt14c.html">HTML Images</a>
+      <a href="wt15c.html">HTML Tables</a>
+      <a href="wt16c.html">HTML Lists</a>
+      <a href="wt17c.html">HTML Blocks</a>
+      <a href="wt18c.html">HTML Classes</a>
+      <a href="html_id19.html">HTML Id</a>
+      <a href="html_frames.html">HTML Frames</a>
+      <a href="hyml_forms.html">HTML Forms</a>
+      <a href="html_form_elements.html">HTML Form Elements</a>
+      <a href="Html_input-types.html">HTML Input Types</a>
+      <a href="css syntax and selection.html">CSS Syntax</a>
+      <a href="css insert.html">CSS How to</a>
+      <a href="css colors.html">CSS Colors</a>
+      <a href="css background.html">CSS Backgrounds</a>
+      <a href="css insert.html">CSS How to</a>
+      <a href="30.html">CSS Borders</a>
+      <a href="31.html">CSS Margins</a>
+      <a href="32.html">CSS Padding</a>
+      <a href="33.html">CSS Height/width</a>
+      <a href="34.html">CSS Box Model</a>
+      <a href="35.html">CSS Outline</a>
+      <a href="36_css_text.html">CSS Text</a>
+      <a href="37_css_fonts.html">CSS Fonts</a>
+      <a href="38_css_lists.html">CSS Lists</a>
+      <a href="39_css_tables.html">CSS Tables</a>
+      <a href="40_css_fonts.html">CSS Icons</a>
+      <a href="p1.html">CSS Layout</a>
+      <a href="p2.html">CSS display block</a>
+      <a href="p3.html">CSS Align </a>
+      <a href="p4.html">CSS Opacity</a>
+      <a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 100px;">
+		<h1>CSS <span class="color_h1">Tables</span></h1>
+
+
+<p class="intro">The look of an HTML table can be greatly improved with CSS:</p>
+<table width="90%" style="border:1px solid">
+<tr class="thead">
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+</tr>
+<tr class="stripetr">
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Germany</td>
+</tr>
+<tr >
+<td>Berglunds snabbköp</td>
+<td>Christina Berglund</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>Centro comercial Moctezuma</td>
+<td>Francisco Chang</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>Ernst Handel</td>
+<td>Roland Mendel</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>Island Trading</td>
+<td>Helen Bennett</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>Königlich Essen</td>
+<td>Philip Cramer</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Laughing Bacchus Winecellars</td>
+<td>Yoshi Tannamuri</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>Magazzini Alimentari Riuniti</td>
+<td>Giovanni Rovelli</td>
+<td>Italy</td>
+</tr>
+</table>
+<br>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Table Borders</h2>
+<p>To specify table borders in CSS, use the <code class="tagbox">border</code> property.</p>
+<p>The example below specifies a black border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:</p>
+<table border="5"><tr>
+<th>First name</th>
+<th>Last name</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+</tr>
+<tr>
+<td>Louis</td>
+<td>Griffin</td>
+</tr>
+</table>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+table, th, td {<br>
+&nbsp;&nbsp;&nbsp;border: 1px solid black;<br>
+}
+</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Collapse Table Borders</h2>
+<p>The <code class="tagbox">border-collapse</code> property sets whether the table borders
+should be collapsed into a single border:</p>
+<table style=" border-collapse: collapse;" border="1"><tr>
+<th>First name</th>
+<th>Last name</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+</tr>
+<tr>
+<td>Louis</td>
+<td>Griffin</td>
+</tr>
+</table>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+table
+{<br>
+&nbsp;&nbsp;&nbsp;
+border-collapse: collapse;<br>
+}<br><br>
+table, th, td
+{<br>
+&nbsp;&nbsp;&nbsp;
+border: 1px solid black;<br>
+}</div>
+</div>
+
+<p style="margin-top:25px;">If you only want a border around the table, only specify the <code class="tagbox">border</code> property for
+&lt;table&gt;:</p>
+ <table style=" border: 1px solid black;"><tr>
+ <th>First name</th>
+ <th>Last name</th>
+ </tr>
+ <tr>
+ <td>Peter</td>
+ <td>Griffin</td>
+ </tr>
+ <tr>
+ <td>Louis</td>
+ <td>Griffin</td>
+ </tr>
+ </table>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+table
+{<br>
+&nbsp;&nbsp;&nbsp; border: 1px solid black;<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+
+<h2>Table Width and Height</h2>
+<p>Width and height of a table are defined by the <code class="tagbox">width</code> and <code class="tagbox">height</code> properties.</p>
+<p>The example below sets the width of the table to 100%, and the height of the
+&lt;th&gt; elements to 50px:</p>
+
+<table style="width: 100%;"border="1px"><tr>
+ <th style="height: 50px;">First name</th>
+ <th style="height: 50px;">Last name</th>
+ <th style="height: 50px;">Savings</th>
+ </tr>
+ <tr>
+ <td>Peter</td>
+ <td>Griffin</td>
+ <td>Rs.100</td>
+ </tr>
+ <tr>
+ <td>Louis</td>
+ <td>Griffin</td>
+ <td>Rs.250</td>
+ </tr>
+ </table>
+
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+table
+{<br>
+&nbsp;&nbsp;&nbsp;
+width: 100%;<br>
+}<br><br>
+th
+{<br>
+&nbsp;&nbsp;&nbsp;
+height: 50px;<br>
+}
+</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Horizontal Alignment</h2>
+<p>The <code class="tagbox">text-align</code> property sets the horizontal alignment (like left, right, or center)
+of the content in &lt;th&gt; or &lt;td&gt;.</p>
+<p>By default, the content of &lt;th&gt; elements are center-aligned and the
+content of &lt;td&gt; elements are left-aligned.</p>
+<p>The following example left-aligns the text in &lt;th&gt; elements:</p>
+
+ <table style=" text-align: left; border-collapse: collapse; width:100%" border="1"><tr>
+  <th>First name</th>
+  <th>Last name</th>
+  </tr>
+  <tr>
+  <td style="vertical-align:bottom;">Peter</td>
+  <td style="vertical-align:bottom;">Griffin</td>
+  </tr>
+  <tr>
+  <td style="vertical-align:bottom;">Louis</td>
+  <td style="vertical-align:bottom;">Griffin</td>
+  </tr>
+ </table>
+
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+th
+{<br>
+&nbsp;&nbsp;&nbsp;
+text-align: left;<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Vertical Alignment</h2>
+<p>The <code class="tagbox">vertical-align</code> property sets the vertical alignment (like top, bottom, or middle)
+of the content in &lt;th&gt; or &lt;td&gt;.</p>
+<p>By default, the vertical alignment of the content in a table is middle (for both &lt;th&gt;
+and &lt;td&gt; elements).</p>
+<p>The following example sets the vertical text alignment to bottom for &lt;td&gt; elements:</p>
+<table style="border-collapse:collapse;width:100%;height:206px;" border="1">
+<th>First name</th>
+  <th>Last name</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  </tr>
+  <tr>
+  <td>Louis</td>
+  <td>Griffin</td>
+  </tr>
+</table>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+td
+{<br>
+&nbsp;&nbsp;&nbsp;
+height: 50px;<br>
+&nbsp;&nbsp;&nbsp;
+vertical-align: bottom;<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+<h2>Table Padding</h2>
+<p>To control the space between the border and the content in a table, use the
+<code class="tagbox">padding</code> property on
+&lt;td&gt; and &lt;th&gt; elements:</p><div>
+<table style="border-collapse:collapse;width:90%;height:206px;" border="1">
+<th style="padding: 15px;text-align: left;">First name</th>
+  <th style="padding: 15px;text-align: left;">Last name</th>
+  </tr>
+  <tr>
+  <td style="padding: 15px;text-align: left;">Peter</td>
+  <td style="padding: 15px;text-align: left;">Griffin</td>
+  </tr>
+  <tr>
+  <td style="padding: 15px;text-align: left;">Louis</td>
+  <td style="padding: 15px;text-align: left;">Griffin</td>
+  </tr>
+</table></div>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+th, td
+{<br>
+&nbsp;&nbsp;&nbsp;
+padding: 15px;<br>&nbsp;&nbsp;&nbsp; text-align: left;<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Horizontal Dividers</h2>
+<table width="90%">
+<thead>
+<tr>
+  <th style="border-bottom: 1px solid #ddd;">First Name</th>
+  <th style="border-bottom: 1px solid #ddd;">Last Name</th>
+  <th style="border-bottom: 1px solid #ddd;">Savings</th>
+</tr>
+</thead>
+<tbody>
+  <tr style=":hover {background-color: #f5f5f5;}">
+    <td style="border-bottom: 1px solid #ddd;">Peter</td>
+    <td style="border-bottom: 1px solid #ddd;">Griffin</td>
+    <td style="border-bottom: 1px solid #ddd;">$100</td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 1px solid #ddd;">Lois</td>
+    <td style="border-bottom: 1px solid #ddd;">Griffin</td>
+    <td style="border-bottom: 1px solid #ddd;">$150</td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 1px solid #ddd;">Joe</td>
+    <td style="border-bottom: 1px solid #ddd;">Swanson</td>
+    <td style="border-bottom: 1px solid #ddd;">$300</td>
+  </tr>
+</tbody>
+</table>
+<p>Add the <code class="tagbox">border-bottom</code> property to &lt;th&gt; and &lt;td&gt; for horizontal dividers:</p>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+th, td {<br>&nbsp;&nbsp;&nbsp; border-bottom: 1px solid #ddd;<br>}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Hoverable Table</h2>
+<p>Use the <code class="tagbox">:hover</code> selector on &lt;tr&gt; to highlight table rows on mouse
+over:</p>
+<table width="90%">
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Savings</th>
+</tr>
+  <tr class="ttr">
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr class="ttr">
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr class="ttr">
+  <tr class="ttr">
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+</table>
+
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+tr:hover {background-color: #f5f5f5;}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>Html Quotations</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+  		<a href="HTMLeditor.html">HTML Editors</a>
+  		<a href="basictags.html">Basic HTML Tags</a>
+  		<a href="HTMLelements.html">HTML Elements</a>
+  		<a href="HTMLattributes.html">HTML Attributes</a>
+  		<a href="HTMLparagraphs">HTML Paragraphs</a>
+  		<a href="html style.html">HTML Styles</a>
+  		<a href="html text formetting.html">HTML Formatting</a>
+  		<a href="html quotations.html">HTML Quotataions</a>
+  		<a href="html comments.html">HTML Comments</a>
+  		<a href="html comments.html">HTML Colors</a>
+  		<a href="html style with css.html">HTML CSS</a>
+  		<a href="wt13c.html">HTML Links</a>
+  		<a href="wt14c.html">HTML Images</a>
+  		<a href="wt15c.html">HTML Tables</a>
+  		<a href="wt16c.html">HTML Lists</a>
+  		<a href="wt17c.html">HTML Blocks</a>
+  		<a href="wt18c.html">HTML Classes</a>
+  		<a href="html_id19.html">HTML Id</a>
+  		<a href="html_frames.html">HTML Frames</a>
+  		<a href="hyml_forms.html">HTML Forms</a>
+  		<a href="html_form_elements.html">HTML Form Elements</a>
+  		<a href="Html_input-types.html">HTML Input Types</a>
+  		<a href="css syntax and selection.html">CSS Syntax</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="css colors.html">CSS Colors</a>
+  		<a href="css background.html">CSS Backgrounds</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="30.html">CSS Borders</a>
+  		<a href="31.html">CSS Margins</a>
+  		<a href="32.html">CSS Padding</a>
+  		<a href="33.html">CSS Height/width</a>
+  		<a href="34.html">CSS Box Model</a>
+  		<a href="35.html">CSS Outline</a>
+  		<a href="36_css_text.html">CSS Text</a>
+  		<a href="37_css_fonts.html">CSS Fonts</a>
+  		<a href="38_css_lists.html">CSS Lists</a>
+  		<a href="39_css_tables.html">CSS Tables</a>
+  		<a href="40_css_fonts.html">CSS Icons</a>
+  		<a href="p1.html">CSS Layout</a>
+  		<a href="p2.html">CSS display block</a>
+  		<a href="p3.html">CSS Align </a>
+  		<a href="p4.html">CSS Opacity</a>
+  		<a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 150px;">
+		<body>
+<h1><center>HTML QUOTATIONS</center></h1>
+<h2><left>Quotation</left></h2>
+<p>Here is a quote from WWF's website:</p>
+<p>For 50 years, WWF has been protecting the future of nature.</p>
+<p>The world's leading conservation organization, WWF works in 100 countries and 
+is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+Html <q> for Short Quotations
+</head>
+<body>
+<p>The HTML <q> element defines a short quotation.</p>
+<p>Browsers usually insert quotation marks around the <q> element.</p>
+<p>Example</p>
+<p><p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p></p>
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+Html <blockquote> For quotation
+</head>
+<body>
+<p>The HTML <blockquote> element defines a section that is quoted from another source.</p>
+<p>Browsers usually indent <blockquote> elements.</p>
+<p>Example</p>
+<p><p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote></p>
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+Html <abbr> for Abbreviations
+</head>
+<body>
+<p>The HTML <abbr> element defines an abbreviation or an acronym.</p>
+<p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+<p>Example</p>
+<p><p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p></p>
+</body>
+</html>
+<!DOCTYPE html>
+<body>
+Html <address> For Contact Information
+</head>
+<body>
+<p>The HTML <address> element defines contact information (author/owner) of a document or an article.</p>
+<p>The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element.</p>
+<p>Example</p>
+<p><address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address></p>
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+Html <cite> For Work Title
+</head>
+<body>
+<p>The HTML <cite> element defines the title of a work.</p>
+<p>Browsers usually display <cite> elements in italic.</p>
+<p>Example</p>
+<p><p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p></p>
+</body>
+</html>
+<!DOCTYPE html>
+<head>
+Html <bdo> For Bi-Directional Override
+</head>
+<body>
+<p>The HTML <bdo> element defines bi-directional override.</p>
+<p>The <bdo> element is used to override the current text direction:</p>
+<p>Example</p>
+<p><bdo dir="rtl">This text will be written from right to left</bdo></p>
+</body>
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

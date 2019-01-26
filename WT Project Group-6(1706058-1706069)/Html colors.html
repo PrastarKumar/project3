@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>Html Colors</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+  		<a href="HTMLeditor.html">HTML Editors</a>
+  		<a href="basictags.html">Basic HTML Tags</a>
+  		<a href="HTMLelements.html">HTML Elements</a>
+  		<a href="HTMLattributes.html">HTML Attributes</a>
+  		<a href="HTMLparagraphs">HTML Paragraphs</a>
+  		<a href="html style.html">HTML Styles</a>
+  		<a href="html text formetting.html">HTML Formatting</a>
+  		<a href="html quotations.html">HTML Quotataions</a>
+  		<a href="html comments.html">HTML Comments</a>
+  		<a href="html comments.html">HTML Colors</a>
+  		<a href="html style with css.html">HTML CSS</a>
+  		<a href="wt13c.html">HTML Links</a>
+  		<a href="wt14c.html">HTML Images</a>
+  		<a href="wt15c.html">HTML Tables</a>
+  		<a href="wt16c.html">HTML Lists</a>
+  		<a href="wt17c.html">HTML Blocks</a>
+  		<a href="wt18c.html">HTML Classes</a>
+  		<a href="html_id19.html">HTML Id</a>
+  		<a href="html_frames.html">HTML Frames</a>
+  		<a href="hyml_forms.html">HTML Forms</a>
+  		<a href="html_form_elements.html">HTML Form Elements</a>
+  		<a href="Html_input-types.html">HTML Input Types</a>
+  		<a href="css syntax and selection.html">CSS Syntax</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="css colors.html">CSS Colors</a>
+  		<a href="css background.html">CSS Backgrounds</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="30.html">CSS Borders</a>
+  		<a href="31.html">CSS Margins</a>
+  		<a href="32.html">CSS Padding</a>
+  		<a href="33.html">CSS Height/width</a>
+  		<a href="34.html">CSS Box Model</a>
+  		<a href="35.html">CSS Outline</a>
+  		<a href="36_css_text.html">CSS Text</a>
+  		<a href="37_css_fonts.html">CSS Fonts</a>
+  		<a href="38_css_lists.html">CSS Lists</a>
+  		<a href="39_css_tables.html">CSS Tables</a>
+  		<a href="40_css_fonts.html">CSS Icons</a>
+  		<a href="p1.html">CSS Layout</a>
+  		<a href="p2.html">CSS display block</a>
+  		<a href="p3.html">CSS Align </a>
+  		<a href="p4.html">CSS Opacity</a>
+  		<a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 150px;">
+		<h1><center><bold>HTML COLORS<bold></center></h1>
+<p>HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+<h2><left>COLORS NAME</left></h2>
+<li>Black</li>
+<li>Blue</li>
+<li>Green</li>
+<li>Yellow</li>
+<li>Red</li>
+<li>Orange</li>
+<p>Html supports 140 colors.</p>
+<h2><left><bold>Background Color</bold></left></h2>
+<p><bold>You can set the background color for HTML elements:</bold></p>
+<table border width="30"height="30"bgcolor="blue">
+<tr>
+<th>HELLO WORLD</th>
+</tr>
+<table border width="700"height="100"bgcolor="pink">
+
+<p>Example</p>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<h2 style="background-color:Tomato;">Lorem ipsum...</h2>
+<h3><left><Bold>Text Color</Bold></left>
+<p><bold>You can set the color of text:</bold></p>
+<h1><color="Yellow">HELLO WORLD</h2>
+<h2><color="Orange">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
+<p>Example</p>
+<p><h1 style="color:Tomato;">Hello World</h1></p>
+<p>style="color:DodgerBlue;">Lorem ipsum...</p></p>
+<p>style="color:MediumSeaGreen;">Ut wisi enim...</p></p>
+<h4><left><bold>Border Color</bold></left></h4>
+<p>You can set the color of borders:</p>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+
+<h3><left><bold>Color Values</bold></left>
+<p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+
+<p>Same as color name "Tomato":</p>
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+<h4><left><bold>RGB Value</bold></left>
+<p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+<p><bold>rgb(red, green, blue)</bold></p>
+<p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).
+To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).
+Experiment by mixing the RGB values below:</p>
+<p>Example</p>
+
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+<p>In HTML, you can specify colors using RGB values.</p>
+
+<h6><left><bold>HEX Value</bold></left>
+<p>In HTML, a color can be specified using a hexadecimal value in the form:</p>
+<h7><left><bold>#rrggbb</bold></left>
+<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+<p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+<p>Example</p>
+
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+<p>In HTML, you can specify colors using Hex values.</p>
+
+<h8><left><bold>HSA Value</bold></left>
+<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+<h9><left><bold>hsl(hue,saturation,lightness)</bold></left>
+<p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+<p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p>
+<p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
+<p>Example</p>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+<p>In HTML, you can specify colors using HSL values.</p>
+
+<h10><left><bold>Sturation</bold></left>
+<p>Saturation can be described as the intensity of a color.</p>
+<p>100% is pure color, no shades of gray</p>
+<p>50% is 50% gray, but you can still see the color.</p>
+<p>0% is completely gray, you can no longer see the color.</p>
+<p>Example</p>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+
+<h11><left><bold>Lightness</bold></left></h11>
+<p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p>
+<p>Example</p>
+
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+
+<h12></left><bold>rgba(red,green,blue,alpha)</bold></left>
+<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+<p>Example</p>
+
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+<p>You can make transparent colors by using the RGBA color value.</p>
+
+<h13><left><bold>HSLA Value</bold></left></h13>
+<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An HSLA color value is specified with:</p>
+<h14><left><bold>hsla(hue,saturation,lightness,alpha)</bold></left></h14>
+<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+<p>Example</p>
+
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+<p>You can make transparent colors by using the HSLA color value.</p>
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

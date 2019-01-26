@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>CSS List</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+body{
+     background-color:#FFFAFA;
+     font:"helvetica";
+     }
+hr{
+    border="0";
+    color="#DCDCDC";
+    }
+.box{
+         width:300pxborder:0;
+         padding:15px;
+         margin: 25px;
+         background-color:#D9D9D9;
+         }
+.bborder{
+           padding:25px;
+           border-left:6px solid Orange;
+           background-color:WhiteSmoke;
+           }
+.tagbox{
+           width:2px;
+           border:0;
+           padding:2px;
+           color: #B22222;
+           background-color:#E6E6E6
+           }
+tr:nth-child(even) {background-color: #f2f2f2;}
+#liol{
+          background: #ffe5e5;
+		  padding: 5px;
+          margin-left: 35px;
+          }
+#liul{
+        background: #cce5ff;
+         margin: 5px;
+         }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+      <a href="HTMLeditor.html">HTML Editors</a>
+      <a href="basictags.html">Basic HTML Tags</a>
+      <a href="HTMLelements.html">HTML Elements</a>
+      <a href="HTMLattributes.html">HTML Attributes</a>
+      <a href="HTMLparagraphs">HTML Paragraphs</a>
+      <a href="html style.html">HTML Styles</a>
+      <a href="html text formetting.html">HTML Formatting</a>
+      <a href="html quotations.html">HTML Quotataions</a>
+      <a href="html comments.html">HTML Comments</a>
+      <a href="html comments.html">HTML Colors</a>
+      <a href="html style with css.html">HTML CSS</a>
+      <a href="wt13c.html">HTML Links</a>
+      <a href="wt14c.html">HTML Images</a>
+      <a href="wt15c.html">HTML Tables</a>
+      <a href="wt16c.html">HTML Lists</a>
+      <a href="wt17c.html">HTML Blocks</a>
+      <a href="wt18c.html">HTML Classes</a>
+      <a href="html_id19.html">HTML Id</a>
+      <a href="html_frames.html">HTML Frames</a>
+      <a href="hyml_forms.html">HTML Forms</a>
+      <a href="html_form_elements.html">HTML Form Elements</a>
+      <a href="Html_input-types.html">HTML Input Types</a>
+      <a href="css syntax and selection.html">CSS Syntax</a>
+      <a href="css insert.html">CSS How to</a>
+      <a href="css colors.html">CSS Colors</a>
+      <a href="css background.html">CSS Backgrounds</a>
+      <a href="css insert.html">CSS How to</a>
+      <a href="30.html">CSS Borders</a>
+      <a href="31.html">CSS Margins</a>
+      <a href="32.html">CSS Padding</a>
+      <a href="33.html">CSS Height/width</a>
+      <a href="34.html">CSS Box Model</a>
+      <a href="35.html">CSS Outline</a>
+      <a href="36_css_text.html">CSS Text</a>
+      <a href="37_css_fonts.html">CSS Fonts</a>
+      <a href="38_css_lists.html">CSS Lists</a>
+      <a href="39_css_tables.html">CSS Tables</a>
+      <a href="40_css_fonts.html">CSS Icons</a>
+      <a href="p1.html">CSS Layout</a>
+      <a href="p2.html">CSS display block</a>
+      <a href="p3.html">CSS Align </a>
+      <a href="p4.html">CSS Opacity</a>
+      <a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 100px; " >
+		<h1>CSS <span>Lists</span></h1>
+
+<hr border="0" color="#DCDCDC">
+
+<div>
+  <div>
+  <h2>Unordered Lists:</h2>
+<ul style="list-style:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<ul style="list-style:square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+  </div>
+  <div>
+  <h2>Ordered Lists:</h2>
+<ol style="list-style:decimal">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<ol style="list-style:upper-roman">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+  </div>
+</div>
+
+<hr border="0" color="#DCDCDC">
+
+<h2>HTML Lists and CSS List Properties</h2>
+<p>In HTML, there are two main types of lists:</p>
+<ul>
+  <li>unordered lists (&lt;ul&gt;) - the list items are marked with bullets</li>
+  <li>ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters</li>
+</ul>
+<p>The CSS list properties allow you to:</p>
+<ul>
+  <li>Set different list item markers for ordered lists</li>
+  <li>Set different list item markers for unordered lists</li>
+  <li>Set an image as the list item marker</li>
+  <li>Add background colors to lists and list items</li>
+</ul>
+
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Different List Item Markers</h2>
+<p>The <code class="tagbox">list-style-type</code> property specifies the type of list item
+marker.</p>
+<p>The following example shows some of the available list item markers: </p>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+ul.a {<br>&nbsp;&nbsp;&nbsp; list-style-type: circle;<br>}<br>
+<br>ul.b {<br>&nbsp;&nbsp;&nbsp; list-style-type: square;<br>}<br>
+<br>
+ol.c {<br>&nbsp;&nbsp;&nbsp; list-style-type: upper-roman;<br>}<br>
+<br>ol.d {<br>&nbsp;&nbsp;&nbsp; list-style-type: lower-alpha;<br>}</div>
+</div>
+<p>Note: Some of the values are for unordered lists, and some for ordered lists.</p>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>An Image as The List Item Marker</h2>
+<p>The <code class="tagbox">list-style-image</code> property specifies an image as the list
+item marker:</p>
+<div class="box">
+<h3>Example</h3>
+<div class="border">
+ul
+{<br>
+&nbsp;&nbsp;&nbsp; list-style-image: url('sqpurple.gif');<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+<h2>Position The List Item Markers</h2>
+<p>The <code class="tagbox">list-style-position</code> property specifies the position of the list-item markers
+(bullet points).</p>
+<p>&quot;list-style-position: outside;&quot; means that the bullet points will be outside
+the list item. The start of each line of a list item will be aligned vertically.
+This is default:</p>
+<ul style="list-style-position:outside;width:25%;">
+<li style="border:1px solid #000000;">Coffee -
+<span>
+A brewed drink prepared from roasted coffee beans...</span></li>
+<li style="border:1px solid #000000;border-top:0;">Tea</li>
+<li style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+</ul>
+<p>&quot;list-style-position: inside;&quot; means that the bullet points will be inside
+the list item. As it is part of the list item, it will be part of the text and
+push the text at the start:</p>
+<ul style="list-style-position:inside;width:25%;">
+<li style="border:1px solid #000000;">Coffee -
+<span>
+A brewed drink prepared from roasted coffee beans...</span></li>
+<li style="border:1px solid #000000;border-top:0;">Tea</li>
+<li style="border:1px solid #000000;border-top:0;">Coca-cola</li>
+</ul>
+
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+  ul.a {<br>&nbsp;&nbsp;&nbsp; list-style-position: outside;<br>}<br><br>ul.b {<br>&nbsp;&nbsp;&nbsp;
+  list-style-position: inside;<br>}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+
+
+
+<h2>Remove Default Settings</h2>
+<p>The <code class="tagbox">list-style-type:none</code> property can also be
+used to remove the markers/bullets. Note that the list also has default margin
+and padding. To remove this, add <code class="tagbox">margin:0</code> and <code class="tagbox">padding:0</code> to &lt;ul&gt; or &lt;ol&gt;:</p>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+ul
+{<br>
+&nbsp;&nbsp;&nbsp;
+list-style-type: none;<br>&nbsp;&nbsp;&nbsp; margin: 0;<br>&nbsp;&nbsp;&nbsp;
+  padding: 0;<br>
+}</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+<h2>List - Shorthand property</h2>
+<p>The <code class="tagbox">list-style</code> property is a shorthand property. It is used to set all the
+list properties in one declaration:</p>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+ul
+{<br>
+&nbsp;&nbsp;&nbsp;
+list-style: square inside url(&quot;sqpurple.gif&quot;);<br>
+}</div>
+</div>
+
+<p>When using the shorthand property, the order of the property values are:</p>
+<ul>
+<li><code class="tagbox">list-style-type</code> (if a list-style-image is specified,
+the value of this property will be displayed if the image for some reason
+cannot be displayed)</li><br>
+<li><code class="tagbox">list-style-position</code> (specifies whether the list-item markers should appear inside or outside the content flow)</li><br>
+<li><code class="tagbox">list-style-image</code> (specifies an image as the list item
+marker)</li>
+</ul>
+<p>If one of the property values above are missing, the default value for the
+missing property will be inserted, if any.</p>
+<hr border="0" color="#DCDCDC">
+
+<h2>Styling List With Colors</h2>
+<p>We can also style lists with colors, to make them look a little more
+interesting.</p>
+<p>Anything added to the &lt;ol&gt; or &lt;ul&gt; tag, affects the entire list, while
+properties added to the &lt;li&gt; tag will affect the individual list items:</p>
+<div class="box">
+<h3>Example</h3>
+<div class="bborder">
+ol {<br>&nbsp;&nbsp;&nbsp; background: #ff9999;<br>&nbsp;&nbsp;&nbsp;
+padding: 20px;<br>}<br><br>ul {<br>&nbsp;&nbsp;&nbsp; background: #3399ff;<br>&nbsp;&nbsp;&nbsp;
+padding: 20px;<br>}<br><br>ol li {<br>&nbsp;&nbsp;&nbsp; background:
+#ffe5e5;<br>&nbsp;&nbsp;&nbsp; padding: 5px;<br>&nbsp;&nbsp;&nbsp;
+margin-left: 35px;<br>}<br><br>ul li {<br>&nbsp;&nbsp;&nbsp; background:
+#cce5ff;<br>&nbsp;&nbsp;&nbsp; margin: 5px;<br>}</div>
+<p>Result:</p>
+<div style=" padding:10px;background-color:WhiteSmoke;">
+<ol style="background: #ff9999;padding: 20px;">
+  <li id="liol">Coffee</li>
+  <li id="liol">Tea</li>
+  <li id="liol">Coca Cola</li>
+</ol>
+<ul style="background: #3399ff;padding: 20px;">
+  <li id="liul">Coffee</li>
+  <li id="liul">Tea</li>
+  <li id="liul">Coca Cola</li>
+</ul>
+</div>
+</div>
+<hr border="0" color="#DCDCDC">
+
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>

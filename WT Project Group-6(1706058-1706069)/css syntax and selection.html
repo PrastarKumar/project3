@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+	<title>Css Syntax and Selectors</title>
+	<style>
+		body {
+
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+	background: url("2nd cover.jpg");
+	background-size: cover;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header {
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+	min-height:70px;
+	border-bottom:3px solid #e8491d;
+	width: 100%;
+	top: 0;
+	position:fixed;
+
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:right;
+	display:inline;
+	padding: 0 20px 0 20px;
+	margin-top:10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight:bold;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight:bold;
+}
+
+
+
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width:30%;
+	margin-top:10px;
+} 
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+	list-style:none;
+	padding:20px;
+	border:#cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #35424a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #35424a;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+footer{	
+	padding:20px;
+	margin-top:180px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<!-- The navigation bar -->
+			<div id="branding">
+				<h1><span class=highlight><img src="icon.png" width="100px" height="50px"><span style="font-size:30px;cursor:pointer; padding: 40px;" onclick="openNav()">&#9776; </span>Gottlieb</span> Web Tutorials</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">REGISTER</button>
+
+				<div id="id01" class="modal">  
+	  				<form class="modal-content animate" action="/action_page.php">
+	  					  <div class="imgcontainer">
+	      				  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      				  	<img src="avatar.png" alt="Avatar" class="avatar">
+	    				  </div>
+
+	    				  <div class="container1">
+	      						<label for="uname"><b>Full Name</b></label>
+	      						<input type="text" placeholder="Enter Username" name="uname" required>
+	      
+	      						<label for="psw"><b>Email</b></label>
+	      						<input type="text" placeholder="Enter Email" name="psw" required>
+	      
+	      						<label for="psw"><b>Password</b></label>
+	      						<input type="password" placeholder="Enter Password" name="psw" required>
+	      
+	      						<label for="psw"><b>Re-Enter Password</b></label>
+	      						<input type="password" placeholder="Re-Enter Password" name="psw" required>
+	        
+	      						<button type="submit">Register</button>
+	      						<label>
+	        					<input type="checkbox" checked="checked" name="remember"> Remember me
+	      						</label>
+	    				  </div>
+	    				  <div class="container1" style="background-color:#f1f1f1">
+	      				  		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      						<span class="psw">Forgot <a href="#">password?</a></span>
+		     			  </div>
+	  				</form>
+				</div>
+			</li>
+					<li><a href="Community.html">Community</a></li>
+					<li class="current"><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- The side hover bar elements -->
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="introhtml.html">Introduction to HTML</a>
+  		<a href="HTMLeditor.html">HTML Editors</a>
+  		<a href="basictags.html">Basic HTML Tags</a>
+  		<a href="HTMLelements.html">HTML Elements</a>
+  		<a href="HTMLattributes.html">HTML Attributes</a>
+  		<a href="HTMLparagraphs">HTML Paragraphs</a>
+  		<a href="html style.html">HTML Styles</a>
+  		<a href="html text formetting.html">HTML Formatting</a>
+  		<a href="html quotations.html">HTML Quotataions</a>
+  		<a href="html comments.html">HTML Comments</a>
+  		<a href="html comments.html">HTML Colors</a>
+  		<a href="html style with css.html">HTML CSS</a>
+  		<a href="wt13c.html">HTML Links</a>
+  		<a href="wt14c.html">HTML Images</a>
+  		<a href="wt15c.html">HTML Tables</a>
+  		<a href="wt16c.html">HTML Lists</a>
+  		<a href="wt17c.html">HTML Blocks</a>
+  		<a href="wt18c.html">HTML Classes</a>
+  		<a href="html_id19.html">HTML Id</a>
+  		<a href="html_frames.html">HTML Frames</a>
+  		<a href="hyml_forms.html">HTML Forms</a>
+  		<a href="html_form_elements.html">HTML Form Elements</a>
+  		<a href="Html_input-types.html">HTML Input Types</a>
+  		<a href="css syntax and selection.html">CSS Syntax</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="css colors.html">CSS Colors</a>
+  		<a href="css background.html">CSS Backgrounds</a>
+  		<a href="css insert.html">CSS How to</a>
+  		<a href="30.html">CSS Borders</a>
+  		<a href="31.html">CSS Margins</a>
+  		<a href="32.html">CSS Padding</a>
+  		<a href="33.html">CSS Height/width</a>
+  		<a href="34.html">CSS Box Model</a>
+  		<a href="35.html">CSS Outline</a>
+  		<a href="36_css_text.html">CSS Text</a>
+  		<a href="37_css_fonts.html">CSS Fonts</a>
+  		<a href="38_css_lists.html">CSS Lists</a>
+  		<a href="39_css_tables.html">CSS Tables</a>
+  		<a href="40_css_fonts.html">CSS Icons</a>
+  		<a href="p1.html">CSS Layout</a>
+  		<a href="p2.html">CSS display block</a>
+  		<a href="p3.html">CSS Align </a>
+  		<a href="p4.html">CSS Opacity</a>
+  		<a href="p5.html">CSS Navigaton Bar</a>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script>
+		function openNav() {
+    			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+    			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+	<!--Content of body -->
+	<section style="margin-left: 265px; margin-top: 100px;">
+		<div class="w3-col l10 m12" id="main">
+      <div id="mainLeaderboard" style="overflow:hidden;">
+        <!-- MainLeaderboard-->
+        
+        <div id="div-gpt-ad-1422003450156-2" data-google-query-id="CKK2kMadht0CFQ3zjwodCbkLYg"><div id="google_ads_iframe_/16833175/MainLeaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/16833175/MainLeaderboard_0" title="3rd party ad content" name="google_ads_iframe_/16833175/MainLeaderboard_0" width="468" height="59" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./css syntax and selectors_files/saved_resource.html"></iframe></div></div>
+       
+      </div>
+<h1>CSS <span class="color_h1">Syntax and Selectors</span></h1>
+
+
+
+<hr>
+<h2>CSS Syntax</h2>
+<p>A CSS rule-set consists of a selector and a declaration block:</p>
+
+<p>The selector points to the HTML element you want to style.</p>
+<p>The declaration block contains one or more declarations separated by 
+semicolons.</p>
+<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+<p>A CSS declaration always ends with a semicolon, and declaration blocks are 
+surrounded by curly braces.</p>
+<p>In the following example all &lt;p&gt; elements will be center-aligned, with a red 
+text color:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+</div>
+<hr>
+
+<h2>CSS Selectors</h2>
+<p>CSS selectors are used to "find" (or select) HTML elements based on their 
+element name, id, 
+class, attribute, and more.</p>
+<hr>
+
+<h2>The element Selector</h2>
+<p>The element selector selects elements based on the element name.</p>
+<p>You can select all &lt;p&gt; elements on a page like this (in this case, all &lt;p&gt; elements will be 
+center-aligned, with a red text color):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+</div>
+<hr>
+
+
+<h2>The id Selector</h2>
+<p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+<p>The id of an element should be unique within a page, so the id selector is 
+used to 
+select one unique element!</p>
+<p>To select an element with a specific id, write a hash (#) character, followed by 
+the id of the element.</p>
+<p>The style rule below will be applied to the HTML element with id="para1":</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+#para1
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+
+<div class="w3-panel w3-note">
+ <p><strong>Note:</strong> An id name cannot start with a number!</p>
+</div>
+<hr>
+
+<h2>The class Selector</h2>
+<p>The class selector selects elements with a specific class attribute.</p>
+<p>To select elements with a specific class, write a period (.) character, followed by the name of the class.</p>
+<p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+.center <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span></div>
+</div>
+
+<p>You can also specify that only specific HTML elements should be affected by a class.</p>
+<p>In the example below, only &lt;p&gt; elements with class="center" will be center-aligned:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p.center <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span></div>
+
+</div>
+
+<p>HTML elements 
+can also refer to more than one class.</p>
+<p>In the example below, the &lt;p&gt; element will be styled according to class="center" 
+and to class="large":</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="center large"</span></span><span style="color:mediumblue">&gt;</span></span>This paragraph refers to two classes.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> A class name cannot start with a number!</p>
+</div>
+
+<hr>
+
+<h2>Grouping Selectors</h2>
+<p>If you have elements with the same style definitions, like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+h1
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span><br>
+<br>h2
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+<br>p
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span> </span></div></div>
+
+
+<p>It will be better to group the selectors, to minimize the code.</p>
+<p>To group selectors, separate each selector with a comma.</p>
+<p>In the example below we have grouped the selectors from the code above:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+h1, h2, p
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+
+</div>
+<hr>
+
+<h2>CSS Comments</h2>
+<p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+<p>Comments are ignored by browsers.</p>
+<p>A CSS comment starts with /* and ends with */. Comments can also span 
+multiple lines:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+p
+<span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;&nbsp;
+color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span style="color:green">/* This is a single-line comment */</span><br>
+&nbsp;&nbsp;&nbsp;
+text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+</span><span style="color:black">}</span><br><br><span style="color:green">/* This is<br>a multi-line<br>comment */</span>
+ </span></div>
+
+</div>
+<hr>
+
+
+
+<br>
+
+</div>
+	</section>
+
+
+	<footer>
+		<p> Gottlieb Web Tutorials copyright &copy; 2018 </p>
+	</footer>
+
+</body>
+</html>
